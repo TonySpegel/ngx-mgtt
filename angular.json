@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "e-paper-dashboard": {
+    "ngx-mqtt": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/e-paper-dashboard",
+            "outputPath": "dist/ngx-mqtt",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "e-paper-dashboard:build"
+            "browserTarget": "ngx-mqtt:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "e-paper-dashboard:build:production"
+              "browserTarget": "ngx-mqtt:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "e-paper-dashboard:build"
+            "browserTarget": "ngx-mqtt:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "e-paper-dashboard:serve"
+            "devServerTarget": "ngx-mqtt:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "e-paper-dashboard:serve:production"
+              "devServerTarget": "ngx-mqtt:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "e-paper-dashboard"
+  "defaultProject": "ngx-mqtt"
 }
